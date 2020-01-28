@@ -1,0 +1,14 @@
+{
+  "name": "I Was Unlucky - DuckDuckGo to Google fallback",
+  "version": "1.0.3",
+  "description": "Easily go back to Google search if you're not happy with DuckDuckGo's result.",
+  "content_scripts": [
+    {
+      "matches": ["https://duckduckgo.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "manifest_version": 2,
+  "icons": { "16": "16.png", "32": "32.png", "48": "48.png", "128": "128.png" }
+}
